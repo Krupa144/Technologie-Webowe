@@ -3,6 +3,8 @@
     left: 1300px;
     word-spacing: 4px;
     top: 14px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .huge{
     position: absolute;
@@ -13,4 +15,9 @@
     position: absolute;
     left:1300px;
     top: 310px
+}
+.about{
+    position: absolute;
+    left: 850px;
+    top:750px;
 }
