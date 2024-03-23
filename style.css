@@ -1,0 +1,16 @@
+.capital{
+    position: absolute;
+    left: 1300px;
+    word-spacing: 4px;
+    top: 14px;
+}
+.huge{
+    position: absolute;
+    left:1300px;
+    top: 240px
+}
+.text{
+    position: absolute;
+    left:1300px;
+    top: 310px
+}
