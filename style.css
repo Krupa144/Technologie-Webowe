@@ -1,11 +1,19 @@
 * {
-  background-color: #e6e6e6;
+  box-sizing: border-box;
+  margin: 0;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+#home {
+  background-color: #e6e6e6;
+  height: 80v;
+  padding-bottom: 15rem;
+}
+header {
+  background-color: #e6e6e6;
 }
 
 a {
@@ -15,10 +23,12 @@ a {
 
 a:visited {
   color: #0dc9c6;
+  text-decoration: none;
 }
 
 a:active {
   color: #0dc9c6;
+  text-decoration: none;
 }
 header {
   display: flex;
@@ -26,7 +36,7 @@ header {
   align-items: center;
   padding: 10px;
   font-size: 15px;
-  margin-right: 10rem;
+  padding-right: 10rem;
   font-family: sans-serif;
   font-weight: 700;
 }
@@ -37,7 +47,7 @@ ul li {
 }
 h1 {
   margin-left: 53rem;
-  margin-top: 10rem;
+  padding-top: 10rem;
   font-size: 38px;
   font-family: sans-serif;
   font-weight: 700;
@@ -62,4 +72,25 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h2 {
+  font-size: 34px;
+  margin-left: 40rem;
+  background-color: white;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+.aboutus {
+  margin-left: 25rem;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #808080;
+}
+.signature {
+  margin-bottom: 12rem;
 }
