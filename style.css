@@ -90,8 +90,9 @@ h2 {
   margin-bottom: 12rem;
 }
 #about {
+  padding-top: 3rem;
   background-color: white;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 .progress-bar-container {
@@ -131,4 +132,26 @@ h3 {
   background-color: #e6e6e6;
   padding-top: 16rem;
   padding-bottom: 10rem;
+}
+.stats {
+  display: flex;
+  background-color: #0dc9c6;
+  padding-right: 7rem;
+  padding-left: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.stats a {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.stats a span {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
 }
