@@ -155,3 +155,50 @@ h3 {
   align-self: flex-start;
   margin-bottom: 0.5rem;
 }
+.container2 {
+  display: flex;
+  flex-direction: row;
+}
+.container3 {
+  display: flex;
+  flex-direction: row;
+}
+.tile {
+  height: 20rem;
+  width: 29rem;
+  overflow: hidden;
+  position: relative;
+}
+.tile img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.tile:hover img {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 .tile:nth-child(odd) {
+  background: #808080;
+}
+.container2 .tile:nth-child(even) {
+  background: #d3d3d3;
+}
+.container3 .tile:nth-child(odd) {
+  background: #d3d3d3;
+}
+.container3 .tile:nth-child(even) {
+  background: #808080;
+}
+
+.load {
+  padding-left: 42rem;
+  padding-top: 3rem;
+  background-color: #e6e6e6;
+  padding-bottom: 3rem;
+  font-family: sans-serif;
+  color: #808080;
+  font-size: 15px;
+}
