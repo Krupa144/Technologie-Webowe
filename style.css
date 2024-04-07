@@ -6,10 +6,12 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  letter-spacing: 1;
+  font-size: 0.75rem;
 }
 #home {
   background-color: #e6e6e6;
-  height: 80vh;
+  height: 90vh;
   padding-bottom: 15rem;
 }
 header {
@@ -29,7 +31,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
+  padding-top: 3rem;
   font-size: 15px;
   padding-right: 10rem;
   font-family: sans-serif;
@@ -44,21 +46,26 @@ ul li {
 h1 {
   display: flex;
   justify-content: end;
-  padding-top: 10rem;
-  padding-right: 14rem;
-  font-size: 2.5rem;
+  padding-top: 14rem;
+  padding-right: 18rem;
+  font-size: 2.1rem;
   font-family: sans-serif;
+  letter-spacing: 1;
 }
 
 p {
+  letter-spacing: 1;
   display: flex;
   justify-content: end;
   padding-right: 11rem;
+  line-height: 1.25;
   font-size: 1.2rem;
   padding-top: 2rem;
   font-family: sans-serif;
 }
-#contact {
+#contact1 {
+  letter-spacing: 1;
+  font-size: 0.75rem;
   display: flex;
   align-items: center;
   position: static;
@@ -69,22 +76,22 @@ p {
   font-family: sans-serif;
   font-weight: 700;
   background-color: #0dc9c6;
-  height: 4rem;
+  height: 3.5rem;
   width: 12rem;
   justify-content: center;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 2rem;
   display: flex;
-  margin-top: 10rem;
   justify-content: center;
   font-family: sans-serif;
 }
 #about {
   background-color: white;
   height: 30vh;
-  padding-bottom: 40rem;
+  padding-top: 5rem;
+  padding-bottom: 22rem;
 }
 .aboutus {
   display: flex;
@@ -120,16 +127,16 @@ h3 {
 
 .skills {
   margin-left: 5rem;
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-family: sans-serif;
 }
 #work {
   position: relative;
   background-color: #e6e6e6;
   height: 30vh;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 30rem;
 }
 .stats {
@@ -149,8 +156,8 @@ h3 {
 .stats a {
   display: flex;
   flex-direction: column;
-  padding-top: 3%;
-  padding-bottom: 5.5%;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
   margin-left: 14%;
   font-size: 13px;
   font-family: sans-serif;
@@ -160,11 +167,7 @@ h3 {
 .stats a span {
   align-self: flex-start;
   margin-bottom: 0.5rem;
-}
-
-.process {
-  background-color: #e6e6e6;
-  height: 80vh;
+  font-weight: 700;
 }
 
 .container2,
@@ -222,4 +225,38 @@ h3 {
   font-family: sans-serif;
   color: #808080;
   font-size: 15px;
+}
+.workprocces h2 {
+  display: flex;
+  justify-content: center;
+}
+.workprocces p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 10rem;
+}
+.workprocces {
+  padding-top: 8rem;
+  background-color: white;
+  padding-bottom: 6rem;
+}
+.wpborder {
+  height: 70vh;
+  background-color: #d3d3d3;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.button {
+  position: absolute;
+  background-color: #0dc9c6;
+  border: none;
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 100%;
+  margin-left: 33rem;
+  margin-top: 14.5rem;
 }
