@@ -385,14 +385,14 @@ h3 {
   height: 40vh;
 }
 #contact {
-  padding-top: 15rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #e6e6e6;
   height: 100vh;
 }
 #contact h2 {
   font-family: sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #contact p {
   word-spacing: 0.1rem;
@@ -402,4 +402,17 @@ h3 {
   justify-content: center;
   text-align: center;
   color: #808080;
+}
+.form {
+  padding-top: 5rem;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form div {
+  margin-bottom: 10px;
+}
+
+.form [name] {
+  margin-left: 5rem;
 }
