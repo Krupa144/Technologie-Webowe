@@ -389,7 +389,7 @@ h3 {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #e6e6e6;
-  height: 120vh;
+  height: 135vh;
 }
 #contact h2 {
   font-family: sans-serif;
@@ -466,20 +466,14 @@ h3 {
   margin-right: 0.8rem;
   padding-left: 2rem;
   padding-bottom: 14rem;
+  margin-bottom: 2rem;
 }
 
-.form .button1 {
-  color: white;
+.button1 {
+  position: static;
   font-size: 1.2rem;
-  margin-top: 2rem;
-  font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  font-family: sans-serif;
+  color: white;
   background-color: #0dc9c6;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  height: 4.5rem;
+  width: 15rem;
 }
