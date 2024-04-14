@@ -477,3 +477,31 @@ h3 {
   height: 4.5rem;
   width: 15rem;
 }
+footer {
+  /* background-color: black; */
+  background-color: blue;
+  height: 40vh;
+  color: black;
+  padding: 3% 0 0 10%;
+}
+
+footer ul {
+  /* color:white; */
+  padding-left: 50rem;
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: center;
+}
+
+footer h3 {
+  /* color:white; */
+  padding-top: 5rem;
+}
+
+footer p {
+  /* color:white; */
+  display: flex;
+  justify-content: start;
+  background-color: red;
+  margin-right: 70%;
+}
