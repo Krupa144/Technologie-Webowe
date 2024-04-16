@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 header {
   background-color: #e9e9e9;
@@ -32,6 +33,11 @@ header ul li {
   font-weight: 500;
   font-family: "Montserrat" sans-serif;
 }
+#home {
+  background-image: url(assets/mac.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 header a {
   color: black;
@@ -54,6 +60,7 @@ header a:active {
   margin-right: auto;
   margin-left: 6.25rem;
 }
+
 #home h1 {
   font-size: 38px;
   letter-spacing: 0px;
@@ -97,7 +104,7 @@ header a:active {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: #10c9c3;
   border: none;
 }
@@ -194,17 +201,15 @@ h3 {
 
 .work {
   margin-top: -69%;
-  margin-left: 42rem;
+  margin-left: 40rem;
   padding-bottom: 0rem;
   width: 76rem;
   height: 43.3rem;
 }
 .stats {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  height: 15rem;
   display: flex;
   background-color: #10c9c3;
-  width: 100%;
 }
 
 h3 {
@@ -240,32 +245,114 @@ h3 {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
-footer{
-  /* background-color: black; */
-  background-color: blue;
-  height:40vh;
-  color:black;
-  padding:3% 0 0 10%;
+<<<<<<< HEAD .icon1 {
+  height: 50%;
+  width: 60%;
+}
+.icon2 {
+  height: 50%;
+  width: 70%;
+}
+.icon3 {
+  height: 50%;
+  width: 50%;
+}
+.icon4 {
+  height: 40%;
+  width: 70%;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-footer ul{
-  /* color:white; */
-  padding-left:50rem;
+.tile {
+  flex: 0 0 calc(25%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tile::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.tile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile::after {
+  content: url("assets/eye.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tile:hover::after {
+  opacity: 1;
+}
+.other-element:hover::after {
+  opacity: 1;
+}
+.load {
+  background-color: #f5f5f5;
+  height: 10vh;
   display: flex;
-  background-color: yellowgreen;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.workprocces h2 {
+  display: flex;
   justify-content: center;
 }
-
-footer h3{
-  /* color:white; */
-  padding-top:5rem;
-}
-
-footer p{
-  /* color:white; */
+.workprocces p {
   display: flex;
-  justify-content: start;
-  background-color: red;
-  margin-right: 70%;
+  text-align: center;
+  justify-content: center;
+  padding-left: 10rem;
+}
+.workprocces {
+  padding-top: 8rem;
+  background-color: white;
+  padding-bottom: 6rem;
+}
+.wpborder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+  height: 571px;
+  background-color: #e9e9e9;
+  margin: auto;
 }
 
+.button {
+  background-color: #10c9c3;
+  border: none;
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 100%;
+  margin: auto;
+  outline: none;
+}
