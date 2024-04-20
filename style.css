@@ -386,10 +386,12 @@ h3 {
   margin: auto;
   text-align: center;
   height: 34rem;
+  width: 100rem;
 }
 
-#services {
-  width: calc(80% - 100px);
+#services div {
+  margin-left: 8rem;
+  margin-bottom: 2rem;
 }
 
 #services h3 {
@@ -421,8 +423,8 @@ h3 {
   padding-bottom: 169px;
 }
 #testimonials {
-  padding-top: 12rem;
-  height: 69vh;
+  padding-top: 179px;
+  height: 501px;
   background-color: #10c9c3;
 }
 
@@ -449,4 +451,171 @@ h3 {
   font-weight: 500;
   font-family: "Montserrat";
   text-align: center;
+}
+
+#testimonials .circles {
+  margin-top: 6.75rem;
+  position: absolute;
+  margin-left: 48%;
+}
+.logos {
+  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+}
+.logos img {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.logocolor {
+  height: 14rem;
+}
+
+#contact {
+  background-color: #f5f5f5;
+}
+#contact h2 {
+  padding-top: 102px;
+  display: flex;
+  justify-content: center;
+  color: #808080;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 84px;
+  color: #1d1d1d;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #787878;
+  font-weight: 400;
+  font-family: "Nunito Sans";
+  text-align: center;
+}
+.form {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form .row {
+  display: flex;
+  align-items: center;
+}
+
+.form .row .name {
+  color: #808080;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.form .row .mail {
+  color: #808080;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.form .row .name,
+.form .row .mail {
+  margin-right: 10px;
+  padding-left: 2rem;
+}
+
+.form .title {
+  color: #808080;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 48.7rem;
+  margin-right: 0.8rem;
+  padding-left: 2rem;
+}
+.form .comment {
+  color: #808080;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 46rem;
+  margin-right: 0.8rem;
+  padding-left: 2rem;
+  padding-bottom: 14rem;
+}
+
+.form .button1 {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 54px;
+  background-color: #10c9c3;
+  justify-content: center;
+  border: none;
+  margin-bottom: 101px;
+}
+
+footer h3 {
+  padding-top: 6.25rem;
+  padding-left: 6%;
+  width: 30%;
+}
+
+.piroll {
+  padding-left: 11%;
+  padding-top: 1.75rem;
+  width: 30%;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-left: 40rem;
+  margin-top: -6rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10rem;
+  margin-top: -2rem;
+  flex-wrap: nowrap;
+}
+
+.project ul {
+  display: flex;
+  list-style: none;
+}
+
+.project ul li {
+  margin-right: 25px;
 }
