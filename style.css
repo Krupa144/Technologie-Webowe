@@ -99,7 +99,7 @@ header a:active {
   text-align: left;
   white-space: pre-line;
 }
-#home button {
+#home a {
   display: flex;
   align-items: center;
   position: static;
@@ -118,6 +118,7 @@ header a:active {
   font-family: "Montserrat", sans-serif;
   background-color: #10c9c3;
   border: none;
+  text-decoration: none;
 }
 
 #about {
