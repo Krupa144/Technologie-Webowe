@@ -17,10 +17,9 @@ header {
 }
 header ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  letter-spacing: 1;
-  font-size: 0.75rem;
+  padding: 0;
+  text-align: center;
 }
 
 header ul li {
@@ -45,6 +44,20 @@ header {
   background-size: 160vh;
   background-position-x: -2.01rem;
 }
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  header ul {
+    flex: 1 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header ul li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
 body,
 html {
   height: 100%;
