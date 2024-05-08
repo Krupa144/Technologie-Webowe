@@ -3,6 +3,12 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
 header {
   background-color: #d2dbde;
   display: flex;
@@ -43,25 +49,6 @@ header {
   background-repeat: no-repeat;
   background-size: 160vh;
   background-position-x: -2.01rem;
-}
-@media (max-width: 768px) {
-  header {
-    padding: 1rem;
-  }
-  header ul {
-    flex: 1 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  header ul li:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
 }
 
 header a {
@@ -135,12 +122,14 @@ header a:active {
 }
 
 #about {
-  height: 26rem;
+  min-height: 26rem;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #about h2 {
-  margin-top: 6rem;
+  margin-top: 3rem;
   font-size: 1.875rem;
   letter-spacing: 0px;
   line-height: 60px;
@@ -163,8 +152,9 @@ header a:active {
 
 .signature {
   margin-top: 2.3rem;
-  position: absolute;
-  margin-left: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .progress-bar-container {
