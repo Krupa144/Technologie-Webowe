@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
@@ -6,8 +6,10 @@
 body,
 html {
   height: 100%;
-  margin: 0;
   font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #d2dbde;
@@ -44,6 +46,7 @@ header ul li {
   background-repeat: no-repeat;
   background-size: 160vh;
 }
+
 header {
   background-image: url(assets/macbook.jpg);
   background-repeat: no-repeat;
@@ -549,7 +552,7 @@ input[type="text"][placeholder="Your Email"] {
   border: none;
 }
 
-form button {
+form .submitInput {
   margin-top: 5rem;
   margin-left: 40%;
   height: 55px;
@@ -627,4 +630,1908 @@ footer h3 {
 
 .project li {
   width: 33.33%;
+} */
+
+@media (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #d2dbde;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 3rem;
+    font-size: 15px;
+    padding-right: 5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 206.9vw;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: inline;
+    margin: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat" sans-serif;
+  }
+
+  #home {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-color: #b7c0c3;
+    height: 73vh;
+    width: 207.5vw;
+  }
+
+  header {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -1.5rem;
+  }
+
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header a:active {
+    color: #10c9c3;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: 6.25rem;
+    height: 20px;
+  }
+
+  #home h1 {
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14.625rem;
+    padding-right: 5.25rem;
+    padding-bottom: 2rem;
+  }
+  #home div {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: end;
+    line-height: 1.25;
+    text-align: left;
+    white-space: pre-line;
+  }
+  #home a {
+    display: flex;
+    align-items: center;
+    position: static;
+    margin-left: auto;
+    margin-right: 25rem;
+    margin-top: 2rem;
+    height: 3.5rem;
+    width: 12rem;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    background-color: #10c9c3;
+    border: none;
+    text-decoration: none;
+  }
+
+  #about {
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220vw;
+  }
+
+  #about h2 {
+    margin-top: 3rem;
+    font-size: 1.875rem;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  .signature {
+    margin-top: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .progress-bar-container {
+    width: 31rem;
+    margin: 20px;
+  }
+
+  .progress-bar {
+    width: 32rem;
+    height: 3px;
+    background-color: #d3d3d3;
+    overflow: hidden;
+    margin-left: 4rem;
+  }
+
+  .progress-bar-filled {
+    width: 75%;
+    height: 100%;
+    background-color: #10c9c3;
+  }
+
+  h3 {
+    margin-left: 5rem;
+  }
+
+  .skills {
+    padding-top: 10rem;
+    margin-left: 6rem;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #171717;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  #work {
+    background-color: #f8f9f9;
+    height: 72vh;
+  }
+  #work .stats {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #0dc9c6;
+  }
+
+  #work h3 {
+    margin-left: 6rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #work {
+    background-image: url("assets/work1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+
+  .stats a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 5rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .stats a span {
+    font-weight: bold;
+  }
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tile {
+    flex: 0 0 calc(25%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tile::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .tile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tile::after {
+    content: url("assets/eye.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #25252599;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .tile:hover::after {
+    opacity: 1;
+  }
+  .other-element:hover::after {
+    opacity: 1;
+  }
+  .load {
+    background-color: #f5f5f5;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .workprocces h2 {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .workprocces p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  .workprocces {
+    background-color: white;
+    padding-bottom: 4rem;
+  }
+  .wpborder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 571px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .play {
+    font-size: 24px;
+  }
+
+  .wpborder:hover .video {
+    opacity: 1;
+  }
+
+  .button {
+    position: absolute;
+    background-color: #10c9c3;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    cursor: pointer;
+    border-radius: 100%;
+    outline: none;
+  }
+
+  .button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #services {
+    padding-top: 169px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    height: 34rem;
+    width: 50vw;
+  }
+
+  #services div {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #services h3 {
+    margin: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #services p {
+    margin: 5px 15px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  #services img {
+    margin-top: 0;
+  }
+  .color {
+    background-color: #e9e9e9;
+    height: 250vh;
+  }
+  #testimonials {
+    padding-top: 179px;
+    height: 501px;
+    background-color: #10c9c3;
+  }
+
+  #testimonials p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  #testimonials a {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #testimonials .circles {
+    margin-top: 6.75rem;
+    margin-left: 48%;
+  }
+  .logos {
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+  }
+  .logos img {
+    max-width: 80%;
+  }
+
+  #contact {
+    background-color: #f5f5f5;
+    height: 105vh;
+  }
+  #contact h2 {
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #contact p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  form {
+    max-width: 800px;
+    margin: 10rem auto 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 29px;
+    height: 5rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  input[type="text"][placeholder="Your Title"] {
+    padding-bottom: 3rem;
+  }
+  input[type="text"][placeholder="First Name"],
+  input[type="text"][placeholder="Your Email"] {
+    width: calc(50% - 5px);
+    height: 3rem;
+    border: none;
+  }
+
+  form .submitInput {
+    margin-top: 5rem;
+    margin-left: 40%;
+    height: 55px;
+    width: 181px;
+    border: none;
+    background-color: #0dc9c6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: 30vh;
+    background-color: #141414;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer h3 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .piroll {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    max-width: 15%;
+  }
+  .piroll p {
+    margin-left: 5rem;
+  }
+
+  .mail1,
+  .project {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+  }
+  .mail1 {
+    max-width: 10%;
+    flex-wrap: wrap;
+  }
+
+  .project ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+  }
+  .media ul {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    list-style: none;
+  }
+
+  .project li {
+    width: 33.33%;
+  }
+}
+@media ((min-width: 1000px) and (max-width: 1500px)) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  body,
+  html {
+    height: 100%;
+    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #d2dbde;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 3rem;
+    font-size: 15px;
+    padding-right: 10rem;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat" sans-serif;
+  }
+
+  #home {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: 160vh;
+  }
+
+  header {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: 160vh;
+    background-position-x: -2.01rem;
+  }
+
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header a:active {
+    color: #10c9c3;
+  }
+
+  #home {
+    background-color: #b7c0c3;
+    animation: brighten 5s infinite alternate;
+    height: 89.9vh;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: 6.25rem;
+    height: 20px;
+  }
+
+  #home h1 {
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14.625rem;
+    padding-right: 9.25rem;
+    padding-bottom: 2rem;
+  }
+  #home div {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: end;
+    line-height: 1.25;
+    text-align: left;
+    white-space: pre-line;
+  }
+  #home a {
+    display: flex;
+    align-items: center;
+    position: static;
+    margin-left: auto;
+    margin-right: 25rem;
+    margin-top: 2rem;
+    height: 3.5rem;
+    width: 12rem;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    background-color: #10c9c3;
+    border: none;
+    text-decoration: none;
+  }
+
+  #about {
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about h2 {
+    margin-top: 3rem;
+    font-size: 1.875rem;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  .signature {
+    margin-top: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .progress-bar-container {
+    width: 31rem;
+    margin: 20px;
+  }
+
+  .progress-bar {
+    width: 2rem;
+    height: 3px;
+    background-color: #d3d3d3;
+    overflow: hidden;
+    margin-left: 4rem;
+  }
+
+  .progress-bar-filled {
+    width: 75%;
+    height: 100%;
+    background-color: #10c9c3;
+  }
+
+  h3 {
+    margin-left: 5rem;
+  }
+
+  .skills {
+    padding-top: 10rem;
+    margin-left: 6rem;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #171717;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  #work {
+    background-color: #f8f9f9;
+    height: 72vh;
+    width: 40vw;
+  }
+  #work .stats {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #0dc9c6;
+  }
+
+  #work h3 {
+    margin-left: 6rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #work {
+    background-image: url("assets/work1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+
+  .stats a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 5rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .stats a span {
+    font-weight: bold;
+  }
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tile {
+    flex: 0 0 calc(25%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tile::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .tile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tile::after {
+    content: url("assets/eye.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #25252599;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .tile:hover::after {
+    opacity: 1;
+  }
+  .other-element:hover::after {
+    opacity: 1;
+  }
+  .load {
+    background-color: #f5f5f5;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .workprocces h2 {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .workprocces p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  .workprocces {
+    background-color: white;
+    padding-bottom: 4rem;
+  }
+  .wpborder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 571px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .play {
+    font-size: 24px;
+  }
+
+  .wpborder:hover .video {
+    opacity: 1;
+  }
+
+  .button {
+    position: absolute;
+    background-color: #10c9c3;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    cursor: pointer;
+    border-radius: 100%;
+    outline: none;
+  }
+
+  .button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #services {
+    padding-top: 169px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    height: 34rem;
+    width: 100rem;
+  }
+
+  #services div {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  #services h3 {
+    margin: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #services p {
+    margin: 5px 15px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  #services img {
+    margin-top: 0;
+  }
+  .color {
+    background-color: #e9e9e9;
+    padding-bottom: 169px;
+  }
+  #testimonials {
+    padding-top: 179px;
+    height: 501px;
+    background-color: #10c9c3;
+  }
+
+  #testimonials p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  #testimonials a {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #testimonials .circles {
+    margin-top: 6.75rem;
+    position: absolute;
+    margin-left: 48%;
+  }
+  .logos {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+  }
+  .logos img {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .logocolor {
+    height: 14rem;
+  }
+
+  #contact {
+    background-color: #f5f5f5;
+    height: 105vh;
+  }
+  #contact h2 {
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #contact p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  form {
+    max-width: 800px;
+    margin: 10rem auto 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 29px;
+    height: 5rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  input[type="text"][placeholder="Your Title"] {
+    padding-bottom: 3rem;
+  }
+  input[type="text"][placeholder="First Name"],
+  input[type="text"][placeholder="Your Email"] {
+    width: calc(50% - 5px);
+    height: 3rem;
+    border: none;
+  }
+
+  form .submitInput {
+    margin-top: 5rem;
+    margin-left: 40%;
+    height: 55px;
+    width: 181px;
+    border: none;
+    background-color: #0dc9c6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: 30vh;
+    background-color: #141414;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer h3 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .piroll {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    max-width: 15%;
+  }
+  .piroll p {
+    margin-left: 5rem;
+  }
+
+  .mail1,
+  .project {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+  }
+  .mail1 {
+    max-width: 10%;
+    flex-wrap: wrap;
+  }
+
+  .project ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+  }
+  .media ul {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    list-style: none;
+  }
+
+  .project li {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1500px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  body,
+  html {
+    height: 100%;
+    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #d2dbde;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 3rem;
+    font-size: 15px;
+    padding-right: 10rem;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat" sans-serif;
+  }
+
+  #home {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: 160vh;
+  }
+
+  header {
+    background-image: url(assets/macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: 160vh;
+    background-position-x: -2.01rem;
+  }
+
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header a:active {
+    color: #10c9c3;
+  }
+
+  #home {
+    background-color: #b7c0c3;
+    animation: brighten 5s infinite alternate;
+    height: 89.9vh;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: 6.25rem;
+    height: 20px;
+  }
+
+  #home h1 {
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14.625rem;
+    padding-right: 9.25rem;
+    padding-bottom: 2rem;
+  }
+  #home div {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: end;
+    line-height: 1.25;
+    text-align: left;
+    white-space: pre-line;
+  }
+  #home a {
+    display: flex;
+    align-items: center;
+    position: static;
+    margin-left: auto;
+    margin-right: 25rem;
+    margin-top: 2rem;
+    height: 3.5rem;
+    width: 12rem;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    background-color: #10c9c3;
+    border: none;
+    text-decoration: none;
+  }
+
+  #about {
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about h2 {
+    margin-top: 3rem;
+    font-size: 1.875rem;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  .signature {
+    margin-top: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .progress-bar-container {
+    width: 31rem;
+    margin: 20px;
+  }
+
+  .progress-bar {
+    width: 32rem;
+    height: 3px;
+    background-color: #d3d3d3;
+    overflow: hidden;
+    margin-left: 4rem;
+  }
+
+  .progress-bar-filled {
+    width: 75%;
+    height: 100%;
+    background-color: #10c9c3;
+  }
+
+  h3 {
+    margin-left: 5rem;
+  }
+
+  .skills {
+    padding-top: 10rem;
+    margin-left: 6rem;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #171717;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  #work {
+    background-color: #f8f9f9;
+    height: 72vh;
+  }
+  #work .stats {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #0dc9c6;
+  }
+
+  #work h3 {
+    margin-left: 6rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #work {
+    background-image: url("assets/work1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats {
+    display: flex;
+    background-color: #10c9c3;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+
+  .stats a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 5rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .stats a span {
+    font-weight: bold;
+  }
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tile {
+    flex: 0 0 calc(25%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tile::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .tile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tile::after {
+    content: url("assets/eye.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #25252599;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .tile:hover::after {
+    opacity: 1;
+  }
+  .other-element:hover::after {
+    opacity: 1;
+  }
+  .load {
+    background-color: #f5f5f5;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .workprocces h2 {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #191919;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .workprocces p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  .workprocces {
+    background-color: white;
+    padding-bottom: 4rem;
+  }
+  .wpborder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 571px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .play {
+    font-size: 24px;
+  }
+
+  .wpborder:hover .video {
+    opacity: 1;
+  }
+
+  .button {
+    position: absolute;
+    background-color: #10c9c3;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    cursor: pointer;
+    border-radius: 100%;
+    outline: none;
+  }
+
+  .button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #services {
+    padding-top: 169px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    height: 34rem;
+    width: 100rem;
+  }
+
+  #services div {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  #services h3 {
+    margin: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #191919;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #services p {
+    margin: 5px 15px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  #services img {
+    margin-top: 0;
+  }
+  .color {
+    background-color: #e9e9e9;
+    padding-bottom: 169px;
+  }
+  #testimonials {
+    padding-top: 179px;
+    height: 501px;
+    background-color: #10c9c3;
+  }
+
+  #testimonials p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  #testimonials a {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  #testimonials .circles {
+    margin-top: 6.75rem;
+    position: absolute;
+    margin-left: 48%;
+  }
+  .logos {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+  }
+  .logos img {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .logocolor {
+    height: 14rem;
+  }
+
+  #contact {
+    background-color: #f5f5f5;
+    height: 105vh;
+  }
+  #contact h2 {
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 84px;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #contact p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+  }
+  form {
+    max-width: 800px;
+    margin: 10rem auto 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 29px;
+    height: 5rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10rem;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  input[type="text"][placeholder="Your Title"] {
+    padding-bottom: 3rem;
+  }
+  input[type="text"][placeholder="First Name"],
+  input[type="text"][placeholder="Your Email"] {
+    width: calc(50% - 5px);
+    height: 3rem;
+    border: none;
+  }
+
+  form .submitInput {
+    margin-top: 5rem;
+    margin-left: 40%;
+    height: 55px;
+    width: 181px;
+    border: none;
+    background-color: #0dc9c6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: 30vh;
+    background-color: #141414;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer h3 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .piroll {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    max-width: 15%;
+  }
+  .piroll p {
+    margin-left: 5rem;
+  }
+
+  .mail1,
+  .project {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+  }
+  .mail1 {
+    max-width: 10%;
+    flex-wrap: wrap;
+  }
+
+  .project ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+  }
+  .media ul {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    list-style: none;
+  }
+
+  .project li {
+    width: 33.33%;
+  }
 }
