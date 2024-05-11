@@ -12,7 +12,6 @@ html {
   padding: 0;
 }
 header {
-  background-color: #d2dbde;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,17 +40,11 @@ header ul li {
   font-family: "Montserrat" sans-serif;
 }
 
-#home {
+.back   {
   background-image: url(assets/macbook.jpg);
   background-repeat: no-repeat;
-  background-size: 160vh;
-}
-
-header {
-  background-image: url(assets/macbook.jpg);
-  background-repeat: no-repeat;
-  background-size: 160vh;
-  background-position-x: -2.01rem;
+  background-size: 180vh;
+  background-color:  #b7c0c3;;
 }
 
 header a {
@@ -64,7 +57,6 @@ header a:active {
 }
 
 #home {
-  background-color: #b7c0c3;
   animation: brighten 5s infinite alternate;
   height: 89.9vh;
 }
@@ -160,38 +152,40 @@ header a:active {
   text-align: center;
 }
 
-.progress-bar-container {
-  width: 31rem;
-  margin: 20px;
+ 
+.skills-section {
+  max-width: 1000px; 
+  margin: 30px auto; 
+  padding: 20px;
+  font-family: Arial, sans-serif; 
+  margin-right:50%;
+}
+
+.skills-section h2 {
+  text-align: left;
+  margin-top:25%;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skill label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.progress-container {
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 5px;
+  border-radius: 2.5px; 
 }
 
 .progress-bar {
-  width: 32rem;
-  height: 3px;
-  background-color: #d3d3d3;
-  overflow: hidden;
-  margin-left: 4rem;
-}
-
-.progress-bar-filled {
-  width: 75%;
-  height: 100%;
+  height: 5px;
+  border-radius: 2.5px;
   background-color: #10c9c3;
-}
-
-h3 {
-  margin-left: 5rem;
-}
-
-.skills {
-  padding-top: 10rem;
-  margin-left: 6rem;
-  font-size: 30px;
-  letter-spacing: 0px;
-  line-height: 84px;
-  color: #171717;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 #work {
   background-color: #f8f9f9;
@@ -633,125 +627,107 @@ footer h3 {
   * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
-  }
-  body,
-  html {
-    width: 100%;
+}
+
+body, html {
     height: 100%;
-    font-family: sans-serif;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  header {
-    background-color: #d2dbde;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 2px;
-    padding-right: 5rem;
-    font-family: sans-serif;
-    font-weight: 700;
-    width: 100%;
-  }
-  header ul {
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2px;
+  padding-right: 5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  width: 100%;
+}
+
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
+}
 
-  header ul li {
+header ul li {
     display: inline;
-    margin: 5px;
-    font-size: 10px;
-    line-height: 14px;
-    text-transform: uppercase;
+    margin-left: 0.5rem; 
+    font-size: 0.75rem; 
+    letter-spacing: 1px;
+    line-height: 1.2; 
     font-weight: 500;
-    font-family: "Montserrat" sans-serif;
-  }
+}
 
-  #home {
-    background-image: url(assets/macbook.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #b7c0c3;
-    width: 100%;
-    height: 50vh;
-  }
+.back   {
+  background-image: url(assets/macbook.jpg);
+  background-repeat: no-repeat;
+  background-size: 120vh;
+  background-color:  #b7c0c3;;
+}
 
-  header {
-    background-image: url(assets/macbook.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    background-position-x: -1rem;
-  }
-
-  header a {
+header a {
     color: black;
     text-decoration: none;
-  }
+}
 
-  header a:active {
+header a:active {
     color: #10c9c3;
-  }
+}
 
-  .logo {
-    margin-right: auto;
-    margin-left: 6.25rem;
-    height: 20px;
-  }
+.logo {
+  margin-right: auto;
+  margin-left: 6.25rem;
+  height: 20px;
+}
 
-  #home h1 {
-    font-size: 20px;
-    letter-spacing: 0px;
-    line-height: 48px;
+#home h1 {
+    font-size: 1.5rem; 
+    line-height: 1.3;
     color: #1d1d1d;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: flex-end;
-    padding-top: 8rem;
-    margin-right: 8rem;
-  }
-  #home div {
-    font-size: 14px;
-    letter-spacing: 0px;
-    line-height: 28px;
+}
+
+#home div {
+    font-size: 0.875rem; 
     color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
+    margin-right: 10%; 
     display: flex;
-    justify-content: end;
-    line-height: 1.25;
+    justify-content: flex-end;
     text-align: left;
     white-space: pre-line;
-  }
-  #home a {
+}
+
+#home a {
     display: flex;
     align-items: center;
-    position: static;
-    margin-left: auto;
-    margin-right: 15rem;
-    margin-top: 2rem;
-    height: 3rem;
-    width: 8rem;
+    margin-right: 50%; 
+    margin-top: 1rem;
+    height: 3rem; 
+    width: 30%; 
     justify-content: center;
-    font-size: 12px;
+    font-size: 0.875rem; 
     letter-spacing: 1px;
-    line-height: 84px;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
     background-color: #10c9c3;
     border: none;
     text-decoration: none;
-  }
+}
+
+#home{
+  height: 25rem;
+}
 
   #about {
     min-height: 26rem;
@@ -795,33 +771,44 @@ footer h3 {
     margin: 20px;
   }
 
-  .progress-bar {
-    width: 32rem;
-    height: 3px;
-    background-color: #d3d3d3;
-    overflow: hidden;
-    margin-left: 4rem;
-  }
+  .skills-section {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+}
 
-  .progress-bar-filled {
+.skills-section h2 {
+    text-align: left;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.skill label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.progress-container {
+    background-color: #e0e0e0;
     width: 100%;
-    height: 100%;
-    background-color: #10c9c3;
-  }
+    height: 5px;
+    border-radius: 2.5px;   
+}
 
-  .skills {
-    padding-top: 10rem;
-    margin-left: 6rem;
-    font-size: 30px;
-    letter-spacing: 0px;
-    line-height: 84px;
-    color: #171717;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-  }
+.progress-bar {
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #10c9c3;
+}
   #work {
     background-color: #f8f9f9;
-    height: 72vh;
+    height: 52vh;
+    background-size: 20rem;
+    
   }
   #work .stats {
     padding-top: 4rem;
@@ -844,6 +831,8 @@ footer h3 {
     background-image: url("assets/work1.png");
     background-position: right;
     background-repeat: no-repeat;
+     background-size: 20rem ;
+
   }
   h3 {
     font-family: sans-serif;
