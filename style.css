@@ -867,7 +867,7 @@ header a:active {
     font-weight: bold;
   }
  
-  container2 {
+  .container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -1007,231 +1007,198 @@ header a:active {
     width: 50vw;
   }
 
+  #services {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+
   #services div {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 
   #services h3 {
-    margin: 10px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #191919;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    line-height: 20px;
   }
 
   #services p {
-    margin: 5px 15px;
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    text-align: center;
-  }
-  #services img {
-    margin-top: 0;
-  }
-  .color {
-    background-color: #e9e9e9;
-    height: 200vh;
-  }
-  #testimonials {
-    padding-top: 179px;
-    height: 70vh;
-    background-color: #10c9c3;
+    font-size: 14px;
+    line-height: 20px;
   }
 
-  #testimonials p {
+  #testimonials {
     display: flex;
-    justify-content: center;
-    font-size: 25px;
-    letter-spacing: 0px;
-    line-height: 36px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 100px;
+    height: auto;
   }
+
+
+  #testimonials p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   #testimonials a {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+    font-size: 10px;
+    line-height: 30px;
   }
 
   #testimonials .circles {
-    margin-top: 6.75rem;
-    margin-left: 48%;
+    margin-top: 4rem;
+    position: static;
+    margin-left: 0;
+    margin-bottom: 4rem;
   }
-  .logos {
-    margin-top: 68px;
+
+  #services {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  #services div {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  #services h3 {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  #services p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #testimonials {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    height: auto;
   }
+
+  #testimonials p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  #testimonials a {
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  #testimonials .circles {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
   .logos img {
-    max-width: 40%;
+    margin: 10px 0;
+  }
+
+  .logocolor {
+    height: 80vh;
   }
 
   #contact {
-    background-color: #f5f5f5;
-    height: 105vh;
+    height: auto;
+    padding: 20px;
   }
+
   #contact h2 {
-    padding-top: 102px;
-    display: flex;
-    justify-content: center;
-    color: #808080;
-    font-size: 30px;
-    letter-spacing: 0px;
-    line-height: 84px;
-    color: #1d1d1d;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
   }
 
   #contact p {
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
   }
+
   form {
-    max-width: 800px;
-    margin: 10rem auto 0;
+    max-width: 90%;
+    margin: 2rem auto 0;
   }
 
   input[type="text"] {
     width: 100%;
-    margin-bottom: 29px;
-    height: 5rem;
-    border: none;
-    resize: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 20px;
+    height: 4rem;
+    font-size: 14px;
   }
 
   textarea {
     width: 100%;
     margin-bottom: 10px;
-    height: 10rem;
-    border: none;
-    resize: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
+    height: 8rem;
+    font-size: 14px;
   }
-  input[type="text"][placeholder="Your Title"] {
-    padding-bottom: 3rem;
-  }
+
   input[type="text"][placeholder="First Name"],
   input[type="text"][placeholder="Your Email"] {
     width: calc(50% - 5px);
-    height: 3rem;
-    border: none;
+    height: 2.5rem;
   }
 
   form .submitInput {
-    margin-top: 5rem;
-    margin-left: 40%;
-    height: 55px;
-    width: 181px;
-    border: none;
-    background-color: #0dc9c6;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0;
+    height: 50px;
+    width: 150px;
+    font-size: 14px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   footer {
-    height: 30vh;
-    background-color: #141414;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
     align-items: center;
+    text-align: center;
   }
+
   footer h3 {
-    font-size: 18px;
-    letter-spacing: 0px;
-    line-height: 72px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
   }
 
-  .piroll {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #bcbcbc;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    max-width: 15%;
-  }
-  .piroll p {
-    margin-left: 5rem;
-  }
-
+  .piroll,
   .mail1,
-  .project {
-    font-size: 15px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #bcbcbc;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    display: flex;
-  }
-  .mail1 {
-    max-width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .project ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    flex-direction: column;
-  }
+  .project ul,
   .media ul {
-    font-size: 15px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #bcbcbc;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    list-style: none;
+    max-width: 100%;
+    margin: 1rem 0;
+    text-align: center;
   }
 
   .project li {
-    width: 33.33%;
+    width: 100%;
   }
-} */
+}
+
+*/
 /* @media ((min-width: 1000px) and (max-width: 1500px)) {
   * {
     box-sizing: border-box;
