@@ -28,6 +28,12 @@ header ul {
   padding: 0;
   text-align: center;
 }
+header .logo {
+  height: 20px;
+  display: flex;
+  margin-right: auto;
+  padding-left: 5rem;
+}
 
 header ul li {
   display: inline;
@@ -57,15 +63,9 @@ header a:active {
 }
 
 #home {
-  animation: brighten 5s infinite alternate;
   height: 89.9vh;
 }
 
-.logo {
-  margin-right: auto;
-  margin-left: 6.25rem;
-  height: 20px;
-}
 
 #home h1 {
   font-size: 38px;
@@ -363,23 +363,30 @@ h3 {
   opacity: 1;
 }
 
-.button {
+.containerb {
   position: absolute;
-  background-color: #10c9c3;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  cursor: pointer;
-  border-radius: 100%;
-  outline: none;
-}
-
-.button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.button {
+  background-color: #10c9c3;
+  border: none;
+  color: white;
+  padding: 32px;
+  cursor: pointer;
+  border-radius: 100%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button .play {
+  font-size: 32px;
+  line-height: 1;
+}
 #services {
   padding-top: 169px;
   display: flex;
@@ -387,13 +394,14 @@ h3 {
   justify-content: space-between;
   margin: auto;
   text-align: center;
-  height: 34rem;
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
 }
 
 #services div {
-  margin-left: 8rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  width: calc(25% - 2rem); 
+  box-sizing: border-box;
 }
 
 #services h3 {
@@ -417,6 +425,7 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
 }
+
 #services img {
   margin-top: 0;
 }
@@ -637,7 +646,9 @@ body, html {
 header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  padding: 1rem;
   justify-content: flex-end;
   font-size: 2px;
   padding-right: 5rem;
@@ -646,17 +657,26 @@ header {
   width: 100%;
 }
 
+header .logo {
+  height: 20px;
+  margin: 0 0 1rem 0;
+}
+
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
+    justify-content: center;
 }
 
 header ul li {
     display: inline;
-    margin-left: 0.5rem; 
-    font-size: 0.75rem; 
+    margin-left: 1rem;
+    margin-top:1rem;
+    word-wrap: 1rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     line-height: 1.2; 
     font-weight: 500;
@@ -665,8 +685,8 @@ header ul li {
 .back   {
   background-image: url(assets/macbook.jpg);
   background-repeat: no-repeat;
-  background-size: 120vh;
-  background-color:  #b7c0c3;;
+  background-size: 121vh;
+  background-position-x: -5rem;
 }
 
 header a {
@@ -723,38 +743,24 @@ header a:active {
 }
 
 #home{
-  height: 25rem;
+  height: 21rem;
 }
 
-  #about {
-    min-height: 26rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+#about {
+  min-height: auto;
+  padding: 1.5rem 1rem;
+}
 
-  #about h2 {
-    margin-top: 3rem;
-    font-size: 30px;
-    letter-spacing: 0px;
-    line-height: 60px;
-    color: #191919;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-  }
+#about h2 {
+  font-size: 20px;
+  margin-top: 1.5rem;
+  line-height: 40px;
+}
 
-  #about p {
-    font-size: 13px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #787878;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    text-align: center;
-    white-space: pre-line;
-  }
+#about p {
+  font-size: 11px;
+  line-height: 18px;
+}
 
   .signature {
     margin-top: 2.3rem;
@@ -845,9 +851,7 @@ header a:active {
     height: 30rem;
     width: 100%;
   }
-
- 
-
+  
   .stats a {
     margin-top: 4rem;
     display: flex;
@@ -862,10 +866,11 @@ header a:active {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
   }
-
+  
   .stats a span {
     font-weight: bold;
   }
+  
  
   .container2 {
     display: flex;
@@ -984,52 +989,60 @@ header a:active {
     background-color: #10c9c3;
     border: none;
     color: white;
-    padding: 32px 32px;
+    padding: 22px 22px;
     cursor: pointer;
     border-radius: 100%;
     outline: none;
   }
-
-  .button {
-    top: 50%;
-    left: 50%;
+  .containerb {
+    position: absolute;
+    top: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
   }
 
-  #services {
-    padding-top: 169px;
+  .button {
+    background-color: #10c9c3;
+    border: none;
+    color: white;
+    padding: 24px;
+    cursor: pointer;
+    border-radius: 100%;
+    outline: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    text-align: center;
-    height: 34rem;
-    width: 50vw;
+    justify-content: center;
+    align-items: center;
   }
 
   #services {
+    padding-top: 80px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    text-align: center;
     height: auto;
-    padding-top: 50px;
+    width: 100vw;
+    margin: auto;
   }
 
   #services div {
-    margin-left: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto 1.5rem;
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #services h3 {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 20px;
   }
 
   #services p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
   }
-
   #testimonials {
     display: flex;
     flex-direction: column;
@@ -1054,53 +1067,6 @@ header a:active {
     position: static;
     margin-left: 0;
     margin-bottom: 4rem;
-  }
-
-  #services {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-  }
-
-  #services div {
-    margin-left: 0;
-    margin-bottom: 1rem;
-  }
-
-  #services h3 {
-    font-size: 10px;
-    line-height: 20px;
-  }
-
-  #services p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  #testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-    height: auto;
-  }
-
-  #testimonials p {
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-  }
-
-  #testimonials a {
-    font-size: 10px;
-    line-height: 30px;
-  }
-
-  #testimonials .circles {
-    margin-top: 4rem;
-    margin-left: 0;
   }
 
   .logos {
@@ -1173,7 +1139,7 @@ header a:active {
 
   footer {
     flex-direction: column;
-    height: auto;
+    height: 100%;
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -1181,7 +1147,8 @@ header a:active {
 
   footer h3 {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
   }
 
   .piroll,
@@ -1189,7 +1156,7 @@ header a:active {
   .project ul,
   .media ul {
     max-width: 100%;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     text-align: center;
   }
 
@@ -2469,4 +2436,3 @@ header a:active {
   .project li {
     width: 33.33%;
   }
-} */
