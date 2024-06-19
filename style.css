@@ -148,7 +148,7 @@ header a:active {
 }
 
 .signature {
-  margin-top: 2.3rem;
+  margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -156,7 +156,7 @@ header a:active {
 
 .skills-section {
   max-width: 100rem;
-  padding: 20px;
+  padding: 30px;
   font-family: Arial, sans-serif;
   margin-right: 50%;
   font-weight: 700;
@@ -183,13 +183,14 @@ header a:active {
   margin-left: 1rem;
   background-color: #e0e0e0;
   width: 100%;
-  height: 5px;
+  height: 2.5px;
   border-radius: 2.5px;
   margin-bottom: 3rem;
 }
 
 .progress-bar {
-  height: 5px;
+  height: 3px;
+
   border-radius: 2.5px;
   background-color: #10c9c3;
 }
@@ -268,7 +269,6 @@ header a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .tile::after {
@@ -677,7 +677,7 @@ footer h3 {
   .back {
     background-image: url(assets/macbook.jpg);
     background-repeat: no-repeat;
-    background-size: 90vh;
+    background-size: cover;
     background-position: bottom;
   }
 
