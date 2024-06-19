@@ -1097,11 +1097,11 @@ footer h3 {
     padding-top: 0.5rem;
   }
 
-  input[type="text"][placeholder="First Name"] {
+  input.first-name {
     width: calc(50% - 15px);
     height: 2.5rem;
   }
-  input[type="text"][placeholder="Your Email"] {
+  input.your-email {
     width: calc(50% - 10px);
     height: 2.5rem;
     margin-left: 2%;
@@ -1270,5 +1270,13 @@ footer h3 {
     font-weight: 400;
     font-family: "Nunito Sans", sans-serif;
     max-width: 25%;
+  }
+}
+
+
+@media (min-width: 1050px) and (max-width: 1550px){
+  .wpborder {
+    width: 900px;
+    height: 500px;
   }
 }
