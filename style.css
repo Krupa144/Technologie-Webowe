@@ -8,7 +8,7 @@ body,
 html {
   height: 100%;
   font-family: sans-serif;
-  font-family: Arial, sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -33,6 +33,7 @@ header .logo {
   display: flex;
   margin-right: auto;
   padding-left: 5rem;
+
 }
 
 header ul li {
@@ -42,8 +43,9 @@ header ul li {
   letter-spacing: 1px;
   line-height: 24px;
   text-transform: uppercase;
+  color: #10c9c3;
   font-weight: 500;
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat";
 }
 
 .back {
@@ -63,7 +65,7 @@ header a:active {
 }
 
 #home {
-  height: 89.9vh;
+  height: 42rem;
 }
 
 #home h1 {
@@ -71,22 +73,22 @@ header a:active {
   letter-spacing: 0px;
   line-height: 48px;
   color: #1d1d1d;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-family: "Montserrat";
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-top: 14.625rem;
-  padding-right: 9.25rem;
+  padding-right: 7.25rem;
   padding-bottom: 2rem;
 }
 #home div {
   font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 28px;
-  color: #787878;
-  font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+letter-spacing: 0px;
+line-height: 28px;
+color: #787878;
+font-weight: 400;
+font-family: "Nunito Sans";
   margin-right: 7rem;
   display: flex;
   justify-content: end;
@@ -110,7 +112,7 @@ header a:active {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   background-color: #10c9c3;
   border: none;
   text-decoration: none;
@@ -119,8 +121,7 @@ header a:active {
 
 
 #about {
-  height: 40vh;
-  min-height: 26rem;
+  height: 27rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,13 +129,13 @@ header a:active {
 
 #about h2 {
   margin-top: 5rem;
-  font-size: 1.875rem;
-  letter-spacing: 0px;
-  line-height: 60px;
-  color: #191919;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
+ font-size: 30px;
+letter-spacing: 0px;
+line-height: 60px;
+color: #191919;
+font-weight: 500;
+font-family: "Montserrat";
+text-align: center;
 }
 
 #about p {
@@ -143,7 +144,7 @@ header a:active {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   text-align: center;
   white-space: pre-line;
 }
@@ -158,19 +159,26 @@ header a:active {
 .skills-section {
   max-width: 100rem;
   padding: 30px;
-  font-family: Arial, sans-serif;
   margin-right: 50%;
-  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 .skills-section h2 {
   margin-left: 1rem;
   text-align: left;
   margin-top: 25%;
-  color: #000;
-  font-size: 35px;
-  margin-bottom: 20px;
-  margin-bottom: 3rem;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 84px;
+  color: #171717;
+  font-weight: 600;
+  font-family: "Montserrat";
 }
 
 .skill label {
@@ -197,7 +205,7 @@ header a:active {
 }
 #work {
   background-color: #f8f9f9;
-  height: 60%;
+  height: 37rem;
 }
 
 #work {
@@ -211,13 +219,13 @@ header a:active {
   display: flex;
   justify-content: center;
   background-color: #00c4cc;
-  padding: 10vh 0;
+  height:15rem ;
 }
 
 .stats {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
 }
 
 .stats a {
@@ -229,7 +237,7 @@ header a:active {
 }
 
 .stats img {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .stats div {
@@ -239,13 +247,23 @@ header a:active {
 }
 
 .stats span {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 .stats p {
-  margin: 2px 0 0;
-  font-size: 16px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 .container2 {
@@ -294,8 +312,9 @@ header a:active {
   opacity: 1;
 }
 .load {
+  cursor: pointer;
   background-color: #f5f5f5;
-  height: 10vh;
+  height: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,8 +334,8 @@ header a:active {
   letter-spacing: 0px;
   line-height: 60px;
   color: #191919;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-family: "Montserrat";
   text-align: center;
 }
 .workprocces p {
@@ -328,29 +347,31 @@ header a:active {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   text-align: center;
 }
 .workprocces {
   background-color: white;
-  padding-bottom: 4rem;
+  height: 20rem;
 }
 .wpborder {
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1170px;
-  height: 571px;
+  width: 1178px;
+  height: 600px;
   position: relative;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .cat {
-  width: 100%;
-  height: 100%;
+  width: 100rem;
+  height: 40rem;
   object-fit: cover;
 }
+
 
 .play {
   font-size: 24px;
@@ -364,7 +385,6 @@ header a:active {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .button {
@@ -408,8 +428,8 @@ header a:active {
   line-height: 30px;
   text-transform: uppercase;
   color: #191919;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 #services p {
@@ -419,7 +439,7 @@ header a:active {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   text-align: center;
 }
 
@@ -432,7 +452,7 @@ header a:active {
 }
 #testimonials {
   padding-top: 179px;
-  height: 501px;
+  height: 40rem;
   background-color: #10c9c3;
 }
 
@@ -444,7 +464,7 @@ header a:active {
   line-height: 36px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   text-align: center;
 }
 #testimonials a {
@@ -470,11 +490,9 @@ header a:active {
   margin-top: 68px;
   display: flex;
   justify-content: center;
+  gap:80px;
 }
-.logos img {
-  margin-right: 5%;
-  margin-left: 5%;
-}
+
 .logocolor {
   height: 14rem;
 }
@@ -487,13 +505,12 @@ header a:active {
   padding-top: 102px;
   display: flex;
   justify-content: center;
-  color: #808080;
   font-size: 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
   line-height: 84px;
   color: #1d1d1d;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 #contact p {
@@ -502,7 +519,7 @@ header a:active {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   text-align: center;
 }
 form {
@@ -526,6 +543,7 @@ input[type="text"] {
 }
 
 textarea {
+  padding-top: 1rem ;
   width: 100%;
   height: 10rem;
   border: none;
@@ -539,14 +557,14 @@ textarea {
   padding-left: 1rem;
 }
 input[type="text"][placeholder="Your Title"] {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 input[type="text"][placeholder="First Name"] {
   width: calc(50% - 15px);
   height: 2.5rem;
 }
 input[type="text"][placeholder="Your Email"] {
-  width: calc(50% - 10px);
+  width: calc(50% - 6px);
   height: 2.5rem;
   margin-left: 2%;
 }
@@ -564,6 +582,12 @@ form .submitInput {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 footer {
@@ -657,7 +681,7 @@ footer h3 {
 
     background-image: url(assets/macbook.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50rem;
     background-position: bottom;
   }
 
@@ -701,7 +725,7 @@ footer h3 {
     }
     
   #about {
-    height: 5rem;
+    height: 25rem;
     
   }
 
@@ -712,7 +736,7 @@ footer h3 {
 
   #about p {
     max-width: 70%;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 18px;
   }
 
@@ -740,32 +764,30 @@ footer h3 {
 
   .skill label {
     display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 
   .progress-container {
     background-color: #e0e0e0;
     width: 100%;
-    height: 5px;
+    height: 2px;
     border-radius: 2.5px;
   }
 
   .progress-bar {
-    height: 5px;
+    height: 2px;
     border-radius: 2.5px;
     background-color: #10c9c3;
   }
   #work {
-    height: 25rem;
+    height: 35rem;
     background-color: #f8f9f9;
     background-image: url("assets/work1.png");
     background-size: contain;
     background-position: bottom;
   }
   #work .stats {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     background-color: #0dc9c6;
   }
 
@@ -780,6 +802,10 @@ footer h3 {
     font-family: "Montserrat", sans-serif;
   }
 
+    .container
+    {
+      height: 45rem;
+    }
   h3 {
     font-family: sans-serif;
     font-size: 18px;
@@ -788,22 +814,22 @@ footer h3 {
   .stats {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap:60px;
   }
 
   .stats p {
-    margin: 5px 0 0;
+    margin: 2px 0 0;
     font-size: 10px;
   }
 
   .stats a {
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
   }
 
   .stats img {
     margin-right: 0;
-    margin-bottom: 10px;
   }
 
   .stats div {
@@ -871,9 +897,9 @@ footer h3 {
   }
 
   .workprocces h2 {
-    margin-top: 6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 30px;
     letter-spacing: 0px;
     line-height: 60px;
@@ -883,25 +909,31 @@ footer h3 {
     text-align: center;
   }
   .workprocces p {
-    max-width: 100%;
+
     display: flex;
-    text-align: center;
     justify-content: center;
     font-size: 16px;
+    text-align: center;
   }
   .workprocces {
     background-color: white;
     padding-bottom: 4rem;
+    justify-content: center;
+
   }
+  
   .wpborder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    height: 301px;
+    width: 150px;
+    height: 100px;
     position: relative;
-    margin: auto;
-    margin-bottom: 100px;
+  }
+  .cat {
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
   }
 
   .video {
@@ -929,10 +961,9 @@ footer h3 {
     outline: none;
   }
   .containerb {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .button {
@@ -949,39 +980,36 @@ footer h3 {
   }
 
   #services {
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: auto;
-    width: 100vw;
-    margin: auto;
+    width: 100%;
+    gap:30px;
   }
 
   #services div {
-    margin: 0 auto 1.5rem;
     width: 100%;
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
   }
 
   #services h3 {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 20px;
   }
 
   #services p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   #testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
     height: auto;
   }
 
@@ -1010,7 +1038,7 @@ footer h3 {
   }
 
   .logos img {
-    margin: 60px 50px;
+    margin: 40px ;
   }
 
   .logocolor {
@@ -1033,10 +1061,11 @@ footer h3 {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    text-align: center;
   }
 
   form {
-    max-width: 90%;
+    max-width: 80%;
     margin: 2rem auto 0;
   }
 
@@ -1057,25 +1086,27 @@ footer h3 {
     padding-top: 0.5rem;
   }
 
-  input.first-name {
+  input[type="text"][placeholder="First Name"]{
     width: calc(50% - 15px);
     height: 2.5rem;
   }
-  input.your-email {
-    width: calc(50% - 10px);
+  input[type="text"][placeholder="Your Email"]{
+    width: calc(50% - 1px);
     height: 2.5rem;
-    margin-left: 2%;
+    margin-left: 10px;
   }
+  
 
   form .submitInput {
     margin-top: 2rem;
     margin-left: 0;
     height: 50px;
-    width: 150px;
+    width: 120px;
     font-size: 14px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    font-size: 12px;
   }
 
   footer {
@@ -1129,7 +1160,7 @@ footer h3 {
   }
 
   .back {
-    height: 90vh;
+    height: 40rem;
     background-size: cover;
   }
 
@@ -1140,8 +1171,10 @@ footer h3 {
   #work {
     background-image: url("assets/work1.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-size: contain;
+    background-position: right;
+    font-size: 20px;
+
   }
 
   .stats span {
@@ -1171,8 +1204,11 @@ footer h3 {
     height: 50vh;
   }
 
-  .logos img {
-    margin: 7px 0;
+  .logos {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    gap:15px;
   }
 
   #contact {
@@ -1208,6 +1244,11 @@ footer h3 {
     width: 600px;
     height: 400px;
   }
+  .cat {
+    width: 45rem;
+    height: 30rem;
+    object-fit: cover;
+  }
 
   form {
     max-width: 600px;
@@ -1240,6 +1281,11 @@ footer h3 {
   .wpborder {
     width: 900px;
     height: 500px;
+  }
+  .cat {
+    width: 60rem;
+    height: 40rem;
+    object-fit: cover;
   }
   .back{
     background-size: cover;
