@@ -8,9 +8,12 @@ body,
 html {
   height: 100%;
   font-family: sans-serif;
-
+  
   margin: 0;
   padding: 0;
+}
+.burger-toggle {
+  display:none;
 }
 header {
   display: flex;
@@ -119,9 +122,8 @@ font-family: "Nunito Sans";
 }
 
 
-
 #about {
-  height: 27rem;
+  height: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,51 +152,49 @@ text-align: center;
 }
 
 .signature {
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .skills-section {
-  max-width: 100rem;
   padding: 30px;
   margin-right: 50%;
-  font-size: 12px;
+  
+}
+
+.skills-section h2 {
+  margin-left: 1rem;
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 84px;
+  color: #171717;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.skill label {
+  margin-left: 1rem;
   letter-spacing: 1px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
   font-weight: 500;
   font-family: "Montserrat";
-}
-
-.skills-section h2 {
-  margin-left: 1rem;
-  text-align: left;
-  margin-top: 25%;
-  font-size: 30px;
-  letter-spacing: 0px;
-  line-height: 84px;
-  color: #171717;
-  font-weight: 600;
-  font-family: "Montserrat";
-}
-
-.skill label {
-  margin-left: 1rem;
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: #000000;
+  margin-bottom: 30px;
 }
 
 .progress-container {
   margin-left: 1rem;
   background-color: #e0e0e0;
-  width: 100%;
+  width: 80%;
   height: 2.5px;
   border-radius: 2.5px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .progress-bar {
@@ -276,6 +276,7 @@ text-align: center;
   width: 25%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .tile::before {
@@ -405,20 +406,20 @@ text-align: center;
   line-height: 1;
 }
 #services {
-  padding-top: 169px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
   text-align: center;
   width: 100%;
-  max-width: 100rem;
+  max-width: 80rem;
+  height: 25rem;
 }
 
 #services div {
   margin: 0 auto 2rem;
   width: calc(25% - 2rem);
-  box-sizing: border-box;
 }
 
 #services h3 {
@@ -452,7 +453,7 @@ text-align: center;
 }
 #testimonials {
   padding-top: 179px;
-  height: 40rem;
+  height: 35rem;
   background-color: #10c9c3;
 }
 
@@ -483,18 +484,18 @@ text-align: center;
 
 #testimonials .circles {
   margin-top: 6.75rem;
-  position: absolute;
+  position: fixed;
   margin-left: 48%;
 }
 .logos {
   margin-top: 68px;
   display: flex;
   justify-content: center;
-  gap:80px;
+  gap:100px;
 }
 
 .logocolor {
-  height: 14rem;
+  height: 10rem;
 }
 
 #contact {
@@ -646,25 +647,48 @@ footer h3 {
   font-weight: 400;
   font-family: "Nunito Sans", sans-serif;
   list-style: none;
+  cursor: pointer;
 }
 
 .project li {
+  cursor: pointer;
   width: 33.33%;
 }
 /* rozdzielczosc 769px */
 @media (max-width: 769px) {
- 
-
   header {
+    background-color: #e7e8ec;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0;
+    padding: 0.10px 2rem;
   }
 
   header .logo {
     padding-left: 0;
-    margin-bottom: 1rem;
+    padding-bottom: 0;
   }
+
+  .burger-toggle {
+    display:none;
+
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .burger-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+  }
+
+  .burger-toggle:checked ~ .nav-menu {
+    display: flex;
+  } 
 
   header ul {
     display: flex;
@@ -673,16 +697,15 @@ footer h3 {
   }
 
   header ul li {
-    margin-left: 0;
-    margin-bottom: 1rem;
+    margin: 10px 0;
   }
-
   .back {
 
     background-image: url(assets/macbook.jpg);
     background-repeat: no-repeat;
     background-size: 50rem;
     background-position: bottom;
+    background-color: #e7e8ec;
   }
 
   header a {
@@ -694,8 +717,6 @@ footer h3 {
     color: #10c9c3;
   }
 
-
-  
     #home {
       display: flex;
       flex-direction: column;
@@ -802,10 +823,11 @@ footer h3 {
     font-family: "Montserrat", sans-serif;
   }
 
-    .container
-    {
-      height: 45rem;
-    }
+  .container
+  {
+    height: 45rem;
+  }
+
   h3 {
     font-family: sans-serif;
     font-size: 18px;
@@ -909,9 +931,11 @@ footer h3 {
     text-align: center;
   }
   .workprocces p {
-
+    max-width: 60%;
+    margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 16px;
     text-align: center;
   }
@@ -1058,10 +1082,12 @@ footer h3 {
   }
 
   #contact p {
+    max-width: 70%;
+    margin: auto;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    text-align: center;
+    align-items: center;
   }
 
   form {
@@ -1127,8 +1153,8 @@ footer h3 {
   .mail1,
   .project ul,
   .media ul {
-    max-width: 100%;
-    margin: 0.5rem 0;
+    max-width: 80%;
+    margin: 1rem 0.5rem;
     text-align: center;
   }
 
@@ -1137,7 +1163,7 @@ footer h3 {
   }
 }
 /* rozdzielczosc 1024 */
-@media (min-width: 769px) and (max-width: 1050px) {
+@media (min-width: 770px) and (max-width: 1050px) {
   header {
     padding-top: 2rem;
     padding-right: 5rem;
@@ -1148,7 +1174,8 @@ footer h3 {
    }
 
   #home h1 {
-    padding-right: 5rem;
+    padding-top: 14.625rem;
+    padding-right: 3.5rem;
   }
 
   #home div {
@@ -1156,7 +1183,7 @@ footer h3 {
   }
 
   #home a {
-    margin-right: 10rem;
+    margin-right: 21rem;
   }
 
   .back {
@@ -1173,7 +1200,6 @@ footer h3 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    font-size: 20px;
 
   }
 
