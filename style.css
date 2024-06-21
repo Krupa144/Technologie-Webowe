@@ -4,39 +4,40 @@
   scroll-behavior: smooth;
   padding: 0;
 }
+
 body,
 html {
   height: 100%;
-  font-family: sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 .burger-toggle {
-  display:none;
+  display: none;
 }
+
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   padding-top: 3rem;
   padding-right: 10rem;
-  font-family: sans-serif;
   font-weight: 700;
 }
+
 header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
 header .logo {
   height: 20px;
   display: flex;
   margin-right: auto;
   padding-left: 5rem;
-
 }
 
 header ul li {
@@ -48,7 +49,6 @@ header ul li {
   text-transform: uppercase;
   color: #10c9c3;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 .back {
@@ -77,7 +77,6 @@ header a:active {
   line-height: 48px;
   color: #1d1d1d;
   font-weight: 500;
-  font-family: "Montserrat";
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -85,24 +84,23 @@ header a:active {
   padding-right: 7.25rem;
   padding-bottom: 2rem;
 }
+
 #home div {
   font-size: 18px;
-letter-spacing: 0px;
-line-height: 28px;
-color: #787878;
-font-weight: 400;
-font-family: "Nunito Sans";
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #787878;
+  font-weight: 400;
   margin-right: 7rem;
   display: flex;
   justify-content: end;
-  line-height: 1.25;
   text-align: left;
   white-space: pre-line;
 }
+
 #home a {
   display: flex;
   align-items: center;
-  position: static;
   margin-left: auto;
   margin-right: 25rem;
   margin-top: 2rem;
@@ -111,16 +109,12 @@ font-family: "Nunito Sans";
   justify-content: center;
   font-size: 12px;
   letter-spacing: 1px;
-  line-height: 84px;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 500;
-  font-family: "Montserrat";
   background-color: #10c9c3;
   border: none;
   text-decoration: none;
 }
-
 
 #about {
   height: 24rem;
@@ -131,13 +125,12 @@ font-family: "Nunito Sans";
 
 #about h2 {
   margin-top: 5rem;
- font-size: 30px;
-letter-spacing: 0px;
-line-height: 60px;
-color: #191919;
-font-weight: 500;
-font-family: "Montserrat";
-text-align: center;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 60px;
+  color: #191919;
+  font-weight: 500;
+  text-align: center;
 }
 
 #about p {
@@ -146,7 +139,6 @@ text-align: center;
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans";
   text-align: center;
   white-space: pre-line;
 }
@@ -161,7 +153,6 @@ text-align: center;
 .skills-section {
   padding: 30px;
   margin-right: 50%;
-  
 }
 
 .skills-section h2 {
@@ -174,7 +165,6 @@ text-align: center;
   line-height: 84px;
   color: #171717;
   font-weight: 700;
-  font-family: "Montserrat";
 }
 
 .skill label {
@@ -184,7 +174,6 @@ text-align: center;
   text-transform: uppercase;
   color: #000000;
   font-weight: 500;
-  font-family: "Montserrat";
   margin-bottom: 30px;
 }
 
@@ -199,16 +188,13 @@ text-align: center;
 
 .progress-bar {
   height: 3px;
-
   border-radius: 2.5px;
   background-color: #10c9c3;
 }
+
 #work {
   background-color: #f8f9f9;
   height: 37rem;
-}
-
-#work {
   background-image: url("assets/work1.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -219,7 +205,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   background-color: #00c4cc;
-  height:15rem ;
+  height: 15rem;
 }
 
 .stats {
@@ -253,7 +239,6 @@ text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 .stats p {
@@ -263,15 +248,14 @@ text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 .container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: cover;
 }
+
 .tile {
   width: 25%;
   position: relative;
@@ -309,9 +293,11 @@ text-align: center;
 .tile:hover::after {
   opacity: 1;
 }
+
 .other-element:hover::after {
   opacity: 1;
 }
+
 .load {
   cursor: pointer;
   background-color: #f5f5f5;
@@ -324,7 +310,6 @@ text-align: center;
   text-transform: uppercase;
   color: #8e8e8e;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 
 .workprocces h2 {
@@ -336,9 +321,9 @@ text-align: center;
   line-height: 60px;
   color: #191919;
   font-weight: 500;
-  font-family: "Montserrat";
   text-align: center;
 }
+
 .workprocces p {
   display: flex;
   text-align: center;
@@ -348,15 +333,14 @@ text-align: center;
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans";
-  text-align: center;
 }
+
 .workprocces {
   background-color: white;
   height: 20rem;
 }
-.wpborder {
 
+.wpborder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +356,6 @@ text-align: center;
   height: 40rem;
   object-fit: cover;
 }
-
 
 .play {
   font-size: 24px;
@@ -405,6 +388,7 @@ text-align: center;
   font-size: 32px;
   line-height: 1;
 }
+
 #services {
   padding-top: 100px;
   display: flex;
@@ -430,7 +414,6 @@ text-align: center;
   text-transform: uppercase;
   color: #191919;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 #services p {
@@ -440,17 +423,17 @@ text-align: center;
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans";
-  text-align: center;
 }
 
 #services img {
   margin-top: 0;
 }
+
 .color {
   background-color: #e9e9e9;
   padding-bottom: 169px;
 }
+
 #testimonials {
   padding-top: 179px;
   height: 35rem;
@@ -465,9 +448,9 @@ text-align: center;
   line-height: 36px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat";
   text-align: center;
 }
+
 #testimonials a {
   display: flex;
   justify-content: center;
@@ -478,20 +461,20 @@ text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
 }
 
 #testimonials .circles {
-  margin-top: 6.75rem;
-  position: fixed;
+  margin-top: 4rem;
+  position: static;
   margin-left: 48%;
+  margin-bottom: 4rem;
 }
+
 .logos {
   margin-top: 68px;
   display: flex;
   justify-content: center;
-  gap:100px;
+  gap: 10%;
 }
 
 .logocolor {
@@ -502,6 +485,7 @@ text-align: center;
   background-color: #f5f5f5;
   height: 50rem;
 }
+
 #contact h2 {
   padding-top: 102px;
   display: flex;
@@ -511,7 +495,6 @@ text-align: center;
   line-height: 84px;
   color: #1d1d1d;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 #contact p {
@@ -520,9 +503,9 @@ text-align: center;
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans";
   text-align: center;
 }
+
 form {
   max-width: 800px;
   margin: 1rem auto 0;
@@ -539,12 +522,11 @@ input[type="text"] {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
   padding-left: 1rem;
 }
 
 textarea {
-  padding-top: 1rem ;
+  padding-top: 1rem;
   width: 100%;
   height: 10rem;
   border: none;
@@ -554,16 +536,18 @@ textarea {
   line-height: 24px;
   color: #787878;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
   padding-left: 1rem;
 }
+
 input[type="text"][placeholder="Your Title"] {
   padding-bottom: 2rem;
 }
+
 input[type="text"][placeholder="First Name"] {
   width: calc(50% - 15px);
   height: 2.5rem;
 }
+
 input[type="text"][placeholder="Your Email"] {
   width: calc(50% - 6px);
   height: 2.5rem;
@@ -588,7 +572,6 @@ form .submitInput {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat";
 }
 
 footer {
@@ -598,13 +581,13 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+
 footer h3 {
   font-size: 18px;
   letter-spacing: 0px;
   line-height: 72px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 
 .piroll {
@@ -614,9 +597,9 @@ footer h3 {
   line-height: 24px;
   color: #bcbcbc;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
   max-width: 15%;
 }
+
 .mail1,
 .project {
   font-size: 15px;
@@ -624,9 +607,9 @@ footer h3 {
   line-height: 24px;
   color: #bcbcbc;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
   display: flex;
 }
+
 .mail1 {
   max-width: 10%;
   flex-wrap: wrap;
@@ -639,13 +622,13 @@ footer h3 {
   flex-direction: column;
   margin-left: 2rem;
 }
+
 .media ul {
   font-size: 15px;
   letter-spacing: 0px;
   line-height: 24px;
   color: #bcbcbc;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
   list-style: none;
   cursor: pointer;
 }
@@ -654,14 +637,14 @@ footer h3 {
   cursor: pointer;
   width: 33.33%;
 }
+
 /* rozdzielczosc 769px */
 @media (max-width: 769px) {
   header {
     background-color: #e7e8ec;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    padding: 0.10px 2rem;
+    padding: 0 2rem;
   }
 
   header .logo {
@@ -670,15 +653,15 @@ footer h3 {
   }
 
   .burger-toggle {
-    display:none;
-
+    display: none;
   }
+
   .nav-menu {
     display: none;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .burger-icon .line {
     width: 25px;
     height: 3px;
@@ -688,7 +671,7 @@ footer h3 {
 
   .burger-toggle:checked ~ .nav-menu {
     display: flex;
-  } 
+  }
 
   header ul {
     display: flex;
@@ -699,8 +682,8 @@ footer h3 {
   header ul li {
     margin: 10px 0;
   }
-  .back {
 
+  .back {
     background-image: url(assets/macbook.jpg);
     background-repeat: no-repeat;
     background-size: 50rem;
@@ -708,46 +691,36 @@ footer h3 {
     background-color: #e7e8ec;
   }
 
-  header a {
-    color: black;
-    text-decoration: none;
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 25rem;
   }
 
-  header a:active {
-    color: #10c9c3;
+  #home h1 {
+    font-size: 27px;
+    padding-top: 2rem;
+    padding-right: 0;
   }
 
-    #home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 25rem;
-    }
-  
-    #home h1 {
-      font-size: 27px;
-      padding-top: 2rem;
-      padding-right: 0;
-    }
-  
-    #home div {
-      text-align: center;
-      font-size: 16px;
-      padding-right: 0;
-      margin-right: 0;
-      width: 300px;
-      margin-bottom: 2rem;
-    }
-  
-    #home a {
-      margin: 1rem auto 0;
-    }
-    
+  #home div {
+    text-align: center;
+    font-size: 16px;
+    padding-right: 0;
+    margin-right: 0;
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+
+  #home a {
+    margin: 1rem auto 0;
+  }
+
   #about {
     height: 25rem;
-    
   }
 
   #about h2 {
@@ -774,7 +747,6 @@ footer h3 {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
   }
 
   .skills-section h2 {
@@ -801,6 +773,7 @@ footer h3 {
     border-radius: 2.5px;
     background-color: #10c9c3;
   }
+
   #work {
     height: 35rem;
     background-color: #f8f9f9;
@@ -808,36 +781,20 @@ footer h3 {
     background-size: contain;
     background-position: bottom;
   }
+
   #work .stats {
     background-color: #0dc9c6;
   }
 
-  #work h3 {
-    margin-left: 6rem;
-    font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .container
-  {
+  .container {
     height: 45rem;
   }
 
-  h3 {
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-  }
   .stats {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:60px;
+    gap: 60px;
   }
 
   .stats p {
@@ -864,6 +821,7 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .tile {
     flex: 1 1 100%;
     position: relative;
@@ -901,9 +859,7 @@ footer h3 {
   .tile:hover::after {
     opacity: 1;
   }
-  .other-element:hover::after {
-    opacity: 1;
-  }
+
   .load {
     background-color: #f5f5f5;
     height: 10vh;
@@ -915,7 +871,6 @@ footer h3 {
     text-transform: uppercase;
     color: #8e8e8e;
     font-weight: 500;
-    font-family: "Montserrat", sans-serif;
   }
 
   .workprocces h2 {
@@ -927,9 +882,9 @@ footer h3 {
     line-height: 60px;
     color: #191919;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
     text-align: center;
   }
+
   .workprocces p {
     max-width: 60%;
     margin: auto;
@@ -939,13 +894,13 @@ footer h3 {
     font-size: 16px;
     text-align: center;
   }
+
   .workprocces {
     background-color: white;
     padding-bottom: 4rem;
     justify-content: center;
-
   }
-  
+
   .wpborder {
     display: flex;
     justify-content: center;
@@ -954,50 +909,19 @@ footer h3 {
     height: 100px;
     position: relative;
   }
+
   .cat {
-    width: 25rem;
+    width: 22rem;
     height: 15rem;
     object-fit: cover;
   }
 
-  .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .play {
-    font-size: 24px;
-  }
-
-  .wpborder:hover .video {
-    opacity: 1;
-  }
-
   .button {
     position: absolute;
-    background-color: #10c9c3;
-    border: none;
-    color: white;
-    padding: 22px 22px;
-    cursor: pointer;
-    border-radius: 100%;
-    outline: none;
-  }
-  .containerb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 22px;
   }
 
-  .button {
-    background-color: #10c9c3;
-    border: none;
-    color: white;
-    padding: 24px;
-    cursor: pointer;
-    border-radius: 100%;
-    outline: none;
+  .containerb {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1010,14 +934,14 @@ footer h3 {
     text-align: center;
     height: auto;
     width: 100%;
-    gap:30px;
+    gap: 30px;
   }
 
   #services div {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -1030,6 +954,7 @@ footer h3 {
     font-size: 14px;
     line-height: 20px;
   }
+
   #testimonials {
     display: flex;
     flex-direction: column;
@@ -1062,7 +987,7 @@ footer h3 {
   }
 
   .logos img {
-    margin: 40px ;
+    margin: 40px;
   }
 
   .logocolor {
@@ -1112,26 +1037,23 @@ footer h3 {
     padding-top: 0.5rem;
   }
 
-  input[type="text"][placeholder="First Name"]{
+  input[type="text"][placeholder="First Name"] {
     width: calc(50% - 15px);
     height: 2.5rem;
   }
-  input[type="text"][placeholder="Your Email"]{
+
+  input[type="text"][placeholder="Your Email"] {
     width: calc(50% - 1px);
     height: 2.5rem;
     margin-left: 10px;
   }
-  
 
   form .submitInput {
     margin-top: 2rem;
-    margin-left: 0;
     height: 50px;
     width: 120px;
-    font-size: 14px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 2rem auto 0;
     font-size: 12px;
   }
 
@@ -1153,7 +1075,7 @@ footer h3 {
   .mail1,
   .project ul,
   .media ul {
-    max-width: 80%;
+    max-width: 90%;
     margin: 1rem 0.5rem;
     text-align: center;
   }
@@ -1162,6 +1084,7 @@ footer h3 {
     width: 100%;
   }
 }
+
 /* rozdzielczosc 1024 */
 @media (min-width: 770px) and (max-width: 1050px) {
   header {
@@ -1171,7 +1094,7 @@ footer h3 {
 
   header .logo {
     justify-content: center;
-   }
+  }
 
   #home h1 {
     padding-top: 14.625rem;
@@ -1191,29 +1114,20 @@ footer h3 {
     background-size: cover;
   }
 
-  #work h3 {
-    justify-content: center;
-  }
-
-  #work {
-    background-image: url("assets/work1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-
-  }
-
   .stats span {
     font-size: 15px;
     font-weight: bold;
   }
+
   .stats p {
     margin: 5px 0 0;
     font-size: 14px;
   }
+
   .stats img {
     margin-right: 5px;
   }
+
   .container2 {
     justify-content: center;
   }
@@ -1234,13 +1148,13 @@ footer h3 {
     margin-top: 68px;
     display: flex;
     justify-content: center;
-    gap:15px;
+    gap: 15px;
   }
 
   #contact {
-    background-color: #f5f5f5;
     height: 50rem;
   }
+
   #testimonials {
     display: flex;
     flex-direction: column;
@@ -1266,10 +1180,12 @@ footer h3 {
     margin-left: 0;
     margin-bottom: 4rem;
   }
+
   .wpborder {
     width: 600px;
     height: 400px;
   }
+
   .cat {
     width: 45rem;
     height: 30rem;
@@ -1287,33 +1203,66 @@ footer h3 {
   footer h3 {
     font-size: 15px;
   }
+
   .piroll {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #bcbcbc;
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
     max-width: 25%;
   }
 }
 
-
-@media (min-width: 1050px) and (max-width: 1550px){
+@media (min-width: 1050px) and (max-width: 1550px) {
   header .logo {
     justify-content: center;
-   }
+  }
+
   .wpborder {
     width: 900px;
     height: 500px;
   }
+
   .cat {
     width: 60rem;
     height: 40rem;
     object-fit: cover;
   }
-  .back{
+
+  .back {
     background-size: cover;
+  }
+
+  .logos {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cat {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+  footer {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .piroll,
+  .mail1,
+  .project ul,
+  .media ul {
+    max-width: 90%;
+    margin: 1rem 0.5rem;
+    text-align: center;
   }
 }
