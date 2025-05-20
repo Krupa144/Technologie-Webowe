@@ -6,6 +6,6 @@ This project was created as part of the final assessment for the "Technologie We
 Technologies Used:
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html, css" />
+    <img src="https://skillicons.dev/icons?i=html,css" />
   </a>
 </p>
